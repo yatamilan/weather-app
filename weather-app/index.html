@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherNow</title>
+
+  <!-- Google Font (optional, looks cleaner) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="app">
+    <!-- Header -->
+    <h1 class="city">Fetching location...</h1>
+
+    <!-- Temperature -->
+    <div class="temp-section">
+      <h2 class="temp">--°C</h2>
+      <p class="desc">Loading...</p>
+    </div>
+
+    <!-- Extra Weather Info -->
+    <div class="details">
+      <p>Humidity: <span class="humidity">--%</span></p>
+      <p>Wind: <span class="wind">-- km/h</span></p>
+      <p>Pressure: <span class="pressure">-- hPa</span></p>
+    </div>
+
+    <!-- Update Time -->
+    <p class="update">Last updated: --</p>
+
+    <!-- Refresh Button -->
+    <button id="refreshBtn">Refresh</button>
+  </div>
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Your JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* === GENERAL RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === APP CONTAINER === */
+.app {
+  width: 90%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+
+/* === CITY NAME === */
+.city {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* === TEMPERATURE & DESCRIPTION === */
+.temp-section {
+  margin: 15px 0;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.desc {
+  font-size: 1rem;
+  text-transform: capitalize;
+  opacity: 0.9;
+}
+
+/* === WEATHER DETAILS (HUMIDITY, WIND, PRESSURE) === */
+.details {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: left;
+}
+
+.details p {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding: 5px 0;
+}
+
+.details p:last-child {
+  border-bottom: none;
+}
+
+/* === UPDATE TIME === */
+.update {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 15px;
+}
+
+/* === REFRESH BUTTON === */
+button {
+  background: white;
+  color: #333;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+  background: #eee;
+  transform: scale(1.05);
+}
+
+/* === RESPONSIVE FOR SMALL SCREENS === */
+@media (max-width: 480px) {
+  .app {
+    padding: 20px 15px;
+  }
+  .temp {
+    font-size: 2.5rem;
+  }
+  .city {
+    font-size: 1.4rem;
+  }
+}
