@@ -1,7 +1,7 @@
 // ===============================
 // CONFIGURATION
 // ===============================
-const apiKey = "9bcba897be28bdaf65980b40c442a9b8";  // 🔹 Replace this with your OpenWeatherMap API key
+const apiKey = "Your Key";  // 🔹 Replace this with your OpenWeatherMap API key
 const cacheKey = "weatherData";
 const cacheDuration = 60 * 60 * 1000; // 1 hour in milliseconds
 
@@ -116,3 +116,4 @@ document.getElementById("refreshBtn").addEventListener("click", () => {
 // INITIAL CALL
 // ===============================
 getWeatherData();
+
